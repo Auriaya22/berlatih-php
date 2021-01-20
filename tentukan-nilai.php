@@ -1,7 +1,14 @@
 <?php
-function tentukan_nilai($number)
-{
-    //  kode disini
+function tentukan_nilai($number){
+  if($number >= 85 && $number <= 100){
+    echo "Nilai : ".$number." (Sangat Baik)<br>";
+  }elseif($number >= 70 && $number < 85){
+    echo "Nilai : ".$number." (Baik)<br>";
+  }elseif($number >= 60 && $number <= 70){
+    echo "Nilai : ".$number." (Cukup)<br>";
+  }elseif($number >= 0 && $number < 60){
+    echo "Nilai : ".$number." (Kurang)<br>";
+  }
 }
 
 //TEST CASES
